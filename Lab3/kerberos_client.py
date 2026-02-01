@@ -8,8 +8,8 @@ USER_KEY = str(input("Enter user_key: ")).encode("utf-8")
 HOST, PORT = "localhost", 5555
 
 
-def send_request_to_server(action, data):
-    request = {"action": action, "data": data}
+def send_request_to_server(server, data):
+    request = {"server": server, "data": data}
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((HOST, PORT))
     s.sendall(json.dumps(request).encode())
