@@ -27,8 +27,8 @@ private:
     bool validateKeyword();
 
 private slots:
-    void on_encryptCeasar_pushButton_clicked();
-    void on_decryptCeasar_pushButton_clicked();
+    void on_encryptCaesar_pushButton_clicked();
+    void on_decryptCaesar_pushButton_clicked();
 
     void on_encryptVegener_pushButton_clicked();
     void on_decryptVegener_pushButton_clicked();

@@ -15,25 +15,25 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_encryptCeasar_pushButton_clicked()
+void MainWindow::on_encryptCaesar_pushButton_clicked()
 {
     if (ui->shift_spinBox->value() == 0)
     {
         QMessageBox::information(nullptr, "?", "What is even the point of crypting/decrypting?", QMessageBox::Ok);
         return;
     }
-    QString crypted = text->EncryptCeasar(ui->shift_spinBox->value(), ui->unencrypted_plainTextEdit->toPlainText());
+    QString crypted = text->EncryptCaesar(ui->shift_spinBox->value(), ui->unencrypted_plainTextEdit->toPlainText());
     ui->encrypted_plainTextEdit->setPlainText(crypted);
 }
 
-void MainWindow::on_decryptCeasar_pushButton_clicked()
+void MainWindow::on_decryptCaesar_pushButton_clicked()
 {
     if (ui->shift_spinBox->value() == 0)
     {
         QMessageBox::information(nullptr, "?", "What is even the point of crypting/decrypting?", QMessageBox::Ok);
         return;
     }
-    QString decrypted = text->DecryptCeasar(ui->shift_spinBox->value(), ui->encrypted_plainTextEdit->toPlainText());
+    QString decrypted = text->DecryptCaesar(ui->shift_spinBox->value(), ui->encrypted_plainTextEdit->toPlainText());
     ui->unencrypted_plainTextEdit->setPlainText(decrypted);
 }
 

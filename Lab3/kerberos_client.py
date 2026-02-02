@@ -25,7 +25,7 @@ def error_check(data):
     return False
 
 
-def client_flow():
+def client_process():
     as_request = {"client": USER_ID}
     as_response = send_request_to_server("auth", as_request)
     if (error_check(as_response)): 
@@ -73,4 +73,4 @@ def client_flow():
 
 
 if __name__ == "__main__":
-    client_flow()
+    client_process()

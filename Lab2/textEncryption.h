@@ -15,8 +15,8 @@ public:
         "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
     };
 
-    QString& EncryptCeasar(int shift, const QString& text);
-    QString& DecryptCeasar(int shift, const QString& cryptedText);
+    QString& EncryptCaesar(int shift, const QString& text);
+    QString& DecryptCaesar(int shift, const QString& cryptedText);
 
     QString& EncryptVegener(const QString& keyword, const QString& text);
     QString& DecryptVegener(const QString& keyword, const QString& cryptedText);

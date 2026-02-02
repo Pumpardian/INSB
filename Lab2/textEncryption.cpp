@@ -21,7 +21,7 @@ void EncryptableText::shiftLetter(QChar& letter, int shift)
     }
 }
 
-QString& EncryptableText::EncryptCeasar(int shift, const QString& text)
+QString& EncryptableText::EncryptCaesar(int shift, const QString& text)
 {
     cryptedText = text;
 
@@ -36,7 +36,7 @@ QString& EncryptableText::EncryptCeasar(int shift, const QString& text)
     return cryptedText;
 }
 
-QString& EncryptableText::DecryptCeasar(int shift, const QString& cryptedText)
+QString& EncryptableText::DecryptCaesar(int shift, const QString& cryptedText)
 {
     text = cryptedText;
     

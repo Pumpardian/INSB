@@ -81,7 +81,7 @@
           </property>
           <widget class="QWidget" name="tab">
            <attribute name="title">
-            <string>Ceasar</string>
+            <string>Caesar</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_4">
             <item>
