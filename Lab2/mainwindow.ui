@@ -101,14 +101,14 @@
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="encryptCeasar_pushButton">
+             <widget class="QPushButton" name="encryptCaesar_pushButton">
               <property name="text">
                <string>Encrypt</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="decryptCeasar_pushButton">
+             <widget class="QPushButton" name="decryptCaesar_pushButton">
               <property name="text">
                <string>Decrypt</string>
               </property>
