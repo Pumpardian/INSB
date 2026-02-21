@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main()
-{
+{   
     printf("Enter something:\n" );
     char buffer[1024];
     fgets(buffer, 1024, stdin);    
@@ -12,9 +12,11 @@ int main()
     printf("Now enter some number: \n");
     while (1)
     {
-        if (scanf("%d", val) != 1)
+        if (scanf("%d", &val) != 1)
         {
             printf("Input failed, try again...\n");
+            scanf("%*[^\n]");
+            scanf("%*c"); 
             continue;
         }
         break;
